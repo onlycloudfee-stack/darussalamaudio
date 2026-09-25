@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Darussalam Audio - BUMI IKPM Gontor Cabang Kairo</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts & FontAwesome Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              bg: '#f3ece1',       /* Background Warm Cream dari Katalog PDF */
+              card: '#e8decb',     /* Card Beige */
+              navy: '#1d394d',     /* Navy Blue/Teal Utama Katalog PDF */
+              navyDark: '#122533', 
+              coral: '#d9534f',    /* Tag Paket Red/Coral */
+              gold: '#c5a059',
+              dark: '#1e293b'
+            }
+          },
+          fontFamily: {
+            sans: ['Poppins', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      background-color: #f3ece1;
+      color: #1d394d;
+      font-family: 'Poppins', sans-serif;
+    }
+    .badge-paket {
+      background-color: #d9534f;
+      clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between selection:bg-brand-navy selection:text-white">
+
+  <!-- HEADER / NAVBAR -->
+  <header class="sticky top-0 z-50 bg-[#f3ece1]/90 backdrop-blur-md border-b border-brand-navy/10 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <!-- Logo & Title -->
+        <div class="flex items-center space-x-3">
+          <div class="w-12 h-12 bg-brand-navy rounded-full flex items-center justify-center p-2 shadow-md">
+            <!-- Icon Logo Headphone Audio -->
+            <i class="fa-solid fa-headphones text-2xl text-white"></i>
+          </div>
+          <div>
+            <h1 class="text-xl font-extrabold tracking-wider text-brand-navy leading-none">DARUSSALAM AUDIO</h1>
+            <p class="text-xs text-brand-navy/80 font-medium">BUMI IKPM Gontor Cabang Kairo</p>
+          </div>
+        </div>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:flex space-x-6 text-sm font-semibold text-brand-navy">
+          <a href="operator.html" class="hover:text-brand-coral transition">Kenali Operator</a>
+          <a href="#sop" class="hover:text-brand-coral transition">SOP Penyewaan</a>
+          <a href="#form" class="hover:text-brand-coral transition">Form Wajib Penyewaan</a>
+          <a href="#kontak" class="hover:text-brand-coral transition">Kontak & Lokasi</a>
+        </nav>
+
+        <!-- CTA Button -->
+        <div class="hidden md:block">
+          <a href="https://bumicloud.rofikii.sbs/index.php/apps/forms/s/yXxktTy7EBTwKrBNTMFxTfmd" target="_blank" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-full shadow-sm text-white bg-red-600 hover:bg-blue-700 transition space-x-2">
+          <!--  <i class="fa-brands fa-whatsapp text-lg"></i>  -->
+            <span>Komentar/Saran</span>
+          </a>
+        </div>
+
+        <!-- Mobile Menu Toggle -->
+        <div class="md:hidden flex items-center">
+          <button id="mobile-menu-button" class="text-brand-navy p-2 focus:outline-none">
+            <i class="fa-solid fa-bars text-2xl"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-[#e8decb] border-b border-brand-navy/20 px-4 pt-2 pb-4 space-y-2 text-brand-navy font-medium">
+      <a href="#katalog" class="block py-2 hover:text-brand-coral">Katalog Darussalam Audio</a>
+      <a href="#sop" class="block py-2 hover:text-brand-coral">SOP Penyewaan</a>
+      <a href="#form" class="block py-2 hover:text-brand-coral">Form Wajib Penyewaan</a>
+      <a href="#kontak" class="block py-2 hover:text-brand-coral">Kontak & Lokasi</a>
+      <a href="https://wa.me/6282337276795" target="_blank" class="flex items-center justify-center py-2.5 bg-green-600 text-white rounded-lg font-semibold space-x-2 mt-2">
+        <i class="fa-brands fa-whatsapp text-lg"></i>
+        <span>WhatsApp CS (+62 82337276795)</span>
+      </a>
+    </div>
+  </header>
+
+
+
+
+
+<!-- HERO SECTION -->
+  <section class="relative w-full bg-[url('src/foto.jpeg')] bg-cover bg-center bg-no-repeat">
+    
+    <!-- Overlay sengaja dihilangkan atau dibuat sangat tipis agar gambar utuh 100% -->
+    <div class="absolute inset-0 bg-black/5"></div>
+
+    <!-- Konten Utama -->
+    <div class="relative py-12 md:py-20 px-4 sm:px-6 lg:px-8 text-center max-w-5xl mx-auto flex flex-col items-center">
+      
+      <!-- Label atas (Background dibuat putih agak transparan agar ikonnya pas) -->
+      <div class="inline-flex items-center space-x-2 bg-white/80 text-brand-navy px-4 py-1.5 rounded-full text-xs md:text-sm font-semibold mb-6 shadow-sm border border-white">
+        <i class="fa-solid fa-circle-check text-green-600"></i>
+        <span>Layanan Sewa Sound System Professional Kairo</span>
+      </div>
+      
+      <!-- Judul dengan Lis / Outline Putih -->
+      <h1 class="text-4xl sm:text-6xl font-black text-brand-navy tracking-tight uppercase mb-4 leading-tight drop-shadow-md [text-shadow:_-2px_-2px_0_#fff,_2px_-2px_0_#fff,_-2px_2px_0_#fff,_2px_2px_0_#fff]">
+        Audio Catalogue
+      </h1>
+      
+      <!-- Deskripsi dengan Lis / Outline Putih (Teks ditebalkan sedikit agar lebih jelas) -->
+      <p class="text-lg md:text-xl text-brand-navy font-bold max-w-2xl mx-auto mb-8 drop-shadow-md [text-shadow:_-1.5px_-1.5px_0_#fff,_1.5px_-1.5px_0_#fff,_-1.5px_1.5px_0_#fff,_1.5px_1.5px_0_#fff]">
+        Penyediaan perlengkapan sound system berkualitas untuk berbagai kegiatan acara masisir & umum di Mesir. Managed by IKPM Gontor Cabang Kairo.
+      </p>
+      
+      <!-- Tombol (Tetap dipertahankan aslinya) -->
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="#katalog" class="px-6 py-3.5 bg-brand-navy text-white font-bold rounded-lg shadow-lg hover:bg-brand-navyDark transition">
+          <i class="fa-solid fa-list-check mr-2"></i>Lihat Katalog & Paket
+        </a>
+        <a href="#form" class="px-6 py-3.5 bg-brand-coral text-white font-bold rounded-lg shadow-lg hover:bg-red-700 transition">
+          <i class="fa-solid fa-file-pen mr-2"></i>Isi Wajib Form
+        </a>
+  </section>
+
+
+
+
+
+  <!-- KATALOG BARANG & PAKET -->
+  <section id="katalog" class="py-12 bg-[#e8decb]/60 border-y border-brand-navy/10 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-10">
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-navy uppercase tracking-wide">Katalog Peralatan & Paket</h2>
+        <p class="text-brand-navy/70 mt-2 font-medium">Pilihan peralatan satuan dan paket hemat audio darussalam</p>
+
+        <!-- Filter Buttons -->
+        <div class="flex justify-center space-x-2 mt-6">
+          <button onclick="filterKatalog('all')" id="btn-all" class="px-4 py-2 rounded-full font-semibold text-sm bg-brand-navy text-white shadow-sm transition">Semua</button>
+          <button onclick="filterKatalog('paket')" id="btn-paket" class="px-4 py-2 rounded-full font-semibold text-sm bg-white text-brand-navy border border-brand-navy/20 hover:bg-brand-navy/10 transition">Paket Hemat</button>
+          <button onclick="filterKatalog('satuan')" id="btn-satuan" class="px-4 py-2 rounded-full font-semibold text-sm bg-white text-brand-navy border border-brand-navy/20 hover:bg-brand-navy/10 transition">Barang Satuan</button>
+        </div>
+      </div>
+
+
+
+
+    
+<!-- Grid Katalog -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- PAKET SEWA -->
+        <!-- Paket 1 -->
+        <div class="item-katalog paket bg-white rounded-xl shadow-md overflow-hidden border border-brand-navy/10 hover:shadow-xl transition flex flex-col">
+          <div class="bg-brand-navy text-white p-4 relative z-10 shadow-sm">
+            <span class="absolute top-3 right-3 bg-brand-coral text-white font-bold text-xs px-3 py-1 rounded-full uppercase">Paket 1</span>
+            <h3 class="text-xl font-bold">PAKET 1</h3>
+            <p class="text-xs text-slate-300">Sederhana & Praktis</p>
+          </div>
+          <!-- Tempat Foto Paket 1 -->
+          <div class="w-full h-48 overflow-hidden bg-gray-100">
+            <img src="imgkatalog/paket1.jpeg" alt="Foto Paket 1" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+          </div>
+          <div class="p-6 flex-grow flex flex-col justify-between">
+            <ul class="text-sm space-y-2 mb-6 text-brand-navy">
+              <li class="flex items-center"><i class="fa-solid fa-check text-green-600 mr-2"></i> 1 Mic Dynamic</li>
+              <li class="flex items-center"><i class="fa-solid fa-check text-green-600 mr-2"></i> 1 Kabel</li>
+            </ul>
+            <div class="flex items-center justify-between border-t border-slate-100 pt-4">
+              <div>
+                <span class="text-xs text-slate-500 block">Harga Sewa</span>
+                <span class="text-2xl font-black text-brand-navy">200 EGP</span>
+              </div>
+              <a href="#form" onclick="selectItem('Paket 1', 200)" class="px-4 py-2 bg-brand-navy text-white text-xs font-bold rounded hover:bg-brand-navyDark transition">Pilih Paket</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Paket 2A -->
+        <div class="item-katalog paket bg-white rounded-xl shadow-md overflow-hidden border border-brand-navy/10 hover:shadow-xl transition flex flex-col">
+          <div class="bg-brand-navy text-white p-4 relative z-10 shadow-sm">
+            <span class="absolute top-3 right-3 bg-brand-coral text-white font-bold text-xs px-3 py-1 rounded-full uppercase">Paket 2A</span>
+            <h3 class="text-xl font-bold">PAKET 2A</h3>
+            <p class="text-xs text-slate-300">Standard Kabel</p>
+          </div>
+          <!-- Tempat Foto Paket 2A -->
+          <div class="w-full h-48 overflow-hidden bg-gray-100">
+            <img src="images/paket2a.jpg" alt="Foto Paket 2A" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+          </div>
+          <div class="p-6 flex-grow flex flex-col justify-between">
+            <ul class="text-sm space-y-2 mb-6 text-brand-navy">
+              <li class="flex items-center"><i class="fa-solid fa-check text-green-600 mr-2"></i> 1 Speaker Active</li>
+              <li class="flex items-center"><i class="fa-solid fa-check text-green-600 mr-2"></i> 1 Mixer Audio</li>
+              <li class="flex items-center"><i class="fa-solid fa-check text-green-600 mr-2"></i> 1 Mic Kabel</li>
+              <li class="flex items-center"><i class="fa-solid fa-check text-green-600 mr-2"></i> 1 Kabel</li>
+            </ul>
+            <div class="flex items-center justify-between border-t border-slate-100 pt-4">
+              <div>
+                <span class="text-xs text-slate-500 block">Harga Sewa</span>
+                <span class="text-2xl font-black text-brand-navy">2.500 EGP</span>
+              </div>
+              <a href="#form" onclick="selectItem('Paket 2A', 2500)" class="px-4 py-2 bg-brand-navy text-white text-xs font-bold rounded hover:bg-brand-navyDark transition">Pilih Paket</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Paket 2B -->
+        <div class="item-katalog paket bg-white rounded-xl shadow-md overflow-hidden border border-brand-navy/10 hover:shadow-xl transition flex flex-col">
+          <div class="bg-brand-navy text-white p-4 relative z-10 shadow-sm">
+            <span class="absolute top-3 right-3 bg-brand-coral text-white font-bold text-xs px-3 py-1 rounded-full uppercase">Paket 2B</span>
+            <h3 class="text-xl font-bold">PAKET 2B</h3>
+            <p class="text-xs text-slate-300">Standard Wireless</p>
+          </div>
+          <!-- Tempat Foto Paket 2B -->
+          <div class="w-full h-48 overflow-hidden bg-gray-100">
+            <img src="images/paket2b.jpg" alt="Foto Paket 2B" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+          </div>
+          <div class="p-6 flex-grow flex flex-col justify-between">
+            <ul class="text-sm space-y-2 mb-6 text-brand-navy">
+              <li class="flex items-center"><i class="fa-solid fa-check text-green-600 mr-2"></i> 1 Speaker Active</li>
+              <li class="flex items-center"><i class="fa-solid fa-check text-green-600 mr-2"></i> 1 Mixer Audio</li>
+              <li class="flex items-center"><i class="fa-solid fa-check text-green-600 mr-2"></i> Mic Wireless</li>
+              <li class="flex items-center"><i class="fa-solid fa-check text-green-600 mr-2"></i> 1 Kabel</li>
+            </ul>
+            <div class="flex items-center justify-between border-t border-slate-100 pt-4">
+              <div>
+                <span class="text-xs text-slate-500 block">Harga Sewa</span>
+                <span class="text-2xl font-black text-brand-navy">2.500 EGP</span>
+              </div>
+              <a href="#form" onclick="selectItem('Paket 2B', 2500)" class="px-4 py-2 bg-brand-navy text-white text-xs font-bold rounded hover:bg-brand-navyDark transition">Pilih Paket</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Paket 3A -->
+        <div class="item-katalog paket bg-white rounded-xl shadow-md overflow-hidden border border-brand-navy/10 hover:shadow-xl transition flex flex-col">
+          <div class="bg-brand-navy text-white p-4 relative z-10 shadow-sm">
+            <span class="absolute top-3 right-3 bg-brand-coral text-white font-bold text-xs px-3 py-1 rounded-full uppercase">Paket 3A</span>
+            <h3 class="text-xl font-bold">PAKET 3A</h3>
+            <p class="text-xs text-slate-300">Lengkap Stand + Mic Dynamic</p>
+          </div>
+          <!-- Tempat Foto Paket 3A -->
+          <div class="w-full h-48 overflow-hidden bg-gray-100">
+            <img src="images/paket3a.jpg" alt="Foto Paket 3A" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+          </div>
+          <div class="p-6 flex-grow flex flex-col justify-between">
+            <ul class="text-sm space-y-2 mb-6 text-brand-navy">
+              <li class="flex items-center"><i class="fa-solid fa-check text-green-600 mr-2"></i> 1 Speaker Active</li>
+              <li class="flex items-center"><i class="fa-solid fa-check text-green-600 mr-2"></i> 1 Mixer Audio</li>
+              <li class="flex items-center"><i class="fa-solid fa-check text-green-600 mr-2"></i> 1 Mic Dynamic</li>
+              <li class="flex items-center"><i class="fa-solid fa-check text-green-600 mr-2"></i> 1 Kabel</li>
+              <li class="flex items-center"><i class="fa-solid fa-check text-green-600 mr-2"></i> 1 Stand Mic</li>
+            </ul>
+            <div class="flex items-center justify-between border-t border-slate-100 pt-4">
+              <div>
+                <span class="text-xs text-slate-500 block">Harga Sewa</span>
+                <span class="text-2xl font-black text-brand-navy">4.500 EGP</span>
+              </div>
+              <a href="#form" onclick="selectItem('Paket 3A', 4500)" class="px-4 py-2 bg-brand-navy text-white text-xs font-bold rounded hover:bg-brand-navyDark transition">Pilih Paket</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Paket 3B -->
+        <div class="item-katalog paket bg-white rounded-xl shadow-md overflow-hidden border border-brand-navy/10 hover:shadow-xl transition flex flex-col">
+          <div class="bg-brand-navy text-white p-4 relative z-10 shadow-sm">
+            <span class="absolute top-3 right-3 bg-brand-coral text-white font-bold text-xs px-3 py-1 rounded-full uppercase">Paket 3B</span>
+            <h3 class="text-xl font-bold">PAKET 3B</h3>
+            <p class="text-xs text-slate-300">Lengkap Stand + Mic Wireless</p>
+          </div>
+          <!-- Tempat Foto Paket 3B -->
+          <div class="w-full h-48 overflow-hidden bg-gray-100">
+            <img src="images/paket3b.jpg" alt="Foto Paket 3B" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+          </div>
+          <div class="p-6 flex-grow flex flex-col justify-between">
+            <ul class="text-sm space-y-2 mb-6 text-brand-navy">
+              <li class="flex items-center"><i class="fa-solid fa-check text-green-600 mr-2"></i> 1 Speaker Active</li>
+              <li class="flex items-center"><i class="fa-solid fa-check text-green-600 mr-2"></i> 1 Mixer Audio</li>
+              <li class="flex items-center"><i class="fa-solid fa-check text-green-600 mr-2"></i> Mic Wireless</li>
+              <li class="flex items-center"><i class="fa-solid fa-check text-green-600 mr-2"></i> 1 Kabel</li>
+              <li class="flex items-center"><i class="fa-solid fa-check text-green-600 mr-2"></i> 1 Stand Mic</li>
+            </ul>
+            <div class="flex items-center justify-between border-t border-slate-100 pt-4">
+              <div>
+                <span class="text-xs text-slate-500 block">Harga Sewa</span>
+                <span class="text-2xl font-black text-brand-navy">4.500 EGP</span>
+              </div>
+              <a href="#form" onclick="selectItem('Paket 3B', 4500)" class="px-4 py-2 bg-brand-navy text-white text-xs font-bold rounded hover:bg-brand-navyDark transition">Pilih Paket</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Paket 4 -->
+        <div class="item-katalog paket bg-white rounded-xl shadow-md overflow-hidden border-2 border-brand-coral relative hover:shadow-xl transition flex flex-col">
+          <div class="bg-brand-coral text-white p-4 relative z-10 shadow-sm">
+            <span class="absolute top-3 right-3 bg-brand-navy text-white font-bold text-xs px-3 py-1 rounded-full uppercase">Best Value</span>
+            <h3 class="text-xl font-bold">PAKET 4</h3>
+            <p class="text-xs text-red-100">Komplit / Acara Besar</p>
+          </div>
+          <!-- Tempat Foto Paket 4 -->
+          <div class="w-full h-48 overflow-hidden bg-gray-100">
+            <img src="images/paket4.jpg" alt="Foto Paket 4" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+          </div>
+          <div class="p-6 flex-grow flex flex-col justify-between">
+            <ul class="text-sm space-y-2 mb-6 text-brand-navy">
+              <li class="flex items-center"><i class="fa-solid fa-check text-green-600 mr-2"></i> 2 Speaker Active</li>
+              <li class="flex items-center"><i class="fa-solid fa-check text-green-600 mr-2"></i> 1 Mixer Audio</li>
+              <li class="flex items-center"><i class="fa-solid fa-check text-green-600 mr-2"></i> 1 Mic Dynamic</li>
+              <li class="flex items-center"><i class="fa-solid fa-check text-green-600 mr-2"></i> Mic Wireless</li>
+              <li class="flex items-center"><i class="fa-solid fa-check text-green-600 mr-2"></i> 1 Kabel</li>
+              <li class="flex items-center"><i class="fa-solid fa-check text-green-600 mr-2"></i> 1 Stand Mic</li>
+            </ul>
+            <div class="flex items-center justify-between border-t border-slate-100 pt-4">
+              <div>
+                <span class="text-xs text-slate-500 block">Harga Sewa</span>
+                <span class="text-2xl font-black text-brand-navy">5.000 EGP</span>
+              </div>
+              <a href="#form" onclick="selectItem('Paket 4', 5000)" class="px-4 py-2 bg-brand-coral text-white text-xs font-bold rounded hover:bg-red-700 transition">Pilih Paket</a>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+      
+<!-- BARANG SATUAN -->
+
+        <!-- Active Speaker -->
+        <div class="item-katalog satuan bg-white rounded-xl overflow-hidden border border-brand-navy/10 shadow-sm hover:shadow-md transition flex flex-col group">
+          <!-- Tempat Foto -->
+          <div class="w-full h-40 overflow-hidden bg-gray-100">
+            <img src="images/speaker-sa15ap.jpg" alt="Active Speaker SA15AP" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+          </div>
+          <div class="p-5 flex flex-col flex-grow justify-between">
+            <div>
+              <div class="text-xs font-bold text-brand-coral uppercase tracking-wider mb-1">Speaker Active</div>
+              <h4 class="text-lg font-bold text-brand-navy">Active Speaker SA15AP</h4>
+            </div>
+            <div class="mt-4 flex items-center justify-between border-t pt-3">
+              <span class="font-bold text-brand-navy">2.000 EGP</span>
+              <a href="#form" onclick="selectItem('Active Speaker SA15AP', 2000)" class="text-xs bg-brand-navy/10 text-brand-navy px-3 py-1.5 rounded font-semibold hover:bg-brand-navy hover:text-white transition">+ Tambah</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Audio Mixer -->
+        <div class="item-katalog satuan bg-white rounded-xl overflow-hidden border border-brand-navy/10 shadow-sm hover:shadow-md transition flex flex-col group">
+          <!-- Tempat Foto -->
+          <div class="w-full h-40 overflow-hidden bg-gray-100">
+            <img src="images/mixer-yamaha.jpg" alt="Audio Mixer Yamaha MG16XU" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+          </div>
+          <div class="p-5 flex flex-col flex-grow justify-between">
+            <div>
+              <div class="text-xs font-bold text-brand-coral uppercase tracking-wider mb-1">Mixer</div>
+              <h4 class="text-lg font-bold text-brand-navy">Audio Mixer Yamaha MG16XU</h4>
+            </div>
+            <div class="mt-4 flex items-center justify-between border-t pt-3">
+              <span class="font-bold text-brand-navy">2.500 EGP</span>
+              <a href="#form" onclick="selectItem('Audio Mixer Yamaha MG16XU', 2500)" class="text-xs bg-brand-navy/10 text-brand-navy px-3 py-1.5 rounded font-semibold hover:bg-brand-navy hover:text-white transition">+ Tambah</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Wireless Sennheiser -->
+        <div class="item-katalog satuan bg-white rounded-xl overflow-hidden border border-brand-navy/10 shadow-sm hover:shadow-md transition flex flex-col group">
+          <!-- Tempat Foto -->
+          <div class="w-full h-40 overflow-hidden bg-gray-100">
+            <img src="images/mic-wireless.jpg" alt="Wireless Sennheiser SKM 9000 MK II" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+          </div>
+          <div class="p-5 flex flex-col flex-grow justify-between">
+            <div>
+              <div class="text-xs font-bold text-brand-coral uppercase tracking-wider mb-1">Microphone</div>
+              <h4 class="text-lg font-bold text-brand-navy">Wireless Sennheiser SKM 9000 MK II</h4>
+            </div>
+            <div class="mt-4 flex items-center justify-between border-t pt-3">
+              <span class="font-bold text-brand-navy">2.500 EGP</span>
+              <a href="#form" onclick="selectItem('Wireless Sennheiser SKM 9000 MK II', 2500)" class="text-xs bg-brand-navy/10 text-brand-navy px-3 py-1.5 rounded font-semibold hover:bg-brand-navy hover:text-white transition">+ Tambah</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mic Dynamic Shure SM58 -->
+        <div class="item-katalog satuan bg-white rounded-xl overflow-hidden border border-brand-navy/10 shadow-sm hover:shadow-md transition flex flex-col group">
+          <!-- Tempat Foto -->
+          <div class="w-full h-40 overflow-hidden bg-gray-100">
+            <img src="images/mic-sm58.jpg" alt="Mic Dynamic Shure SM58" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+          </div>
+          <div class="p-5 flex flex-col flex-grow justify-between">
+            <div>
+              <div class="text-xs font-bold text-brand-coral uppercase tracking-wider mb-1">Microphone</div>
+              <h4 class="text-lg font-bold text-brand-navy">Mic Dynamic Shure SM58</h4>
+            </div>
+            <div class="mt-4 flex items-center justify-between border-t pt-3">
+              <span class="font-bold text-brand-navy">150 EGP</span>
+              <a href="#form" onclick="selectItem('Mic Dynamic Shure SM58', 150)" class="text-xs bg-brand-navy/10 text-brand-navy px-3 py-1.5 rounded font-semibold hover:bg-brand-navy hover:text-white transition">+ Tambah</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mic Instrumen Shure SM57 -->
+        <div class="item-katalog satuan bg-white rounded-xl overflow-hidden border border-brand-navy/10 shadow-sm hover:shadow-md transition flex flex-col group">
+          <!-- Tempat Foto -->
+          <div class="w-full h-40 overflow-hidden bg-gray-100">
+            <img src="images/mic-sm57.jpg" alt="Mic Instrumen Shure SM57" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+          </div>
+          <div class="p-5 flex flex-col flex-grow justify-between">
+            <div>
+              <div class="text-xs font-bold text-brand-coral uppercase tracking-wider mb-1">Microphone</div>
+              <h4 class="text-lg font-bold text-brand-navy">Mic Instrumen Shure SM57</h4>
+            </div>
+            <div class="mt-4 flex items-center justify-between border-t pt-3">
+              <span class="font-bold text-brand-navy">150 EGP</span>
+              <a href="#form" onclick="selectItem('Mic Instrumen Shure SM57', 150)" class="text-xs bg-brand-navy/10 text-brand-navy px-3 py-1.5 rounded font-semibold hover:bg-brand-navy hover:text-white transition">+ Tambah</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Stand Mic Panjang -->
+        <div class="item-katalog satuan bg-white rounded-xl overflow-hidden border border-brand-navy/10 shadow-sm hover:shadow-md transition flex flex-col group">
+          <!-- Tempat Foto -->
+          <div class="w-full h-40 overflow-hidden bg-gray-100">
+            <img src="images/stand-mic-panjang.jpg" alt="Stand Mic Panjang" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+          </div>
+          <div class="p-5 flex flex-col flex-grow justify-between">
+            <div>
+              <div class="text-xs font-bold text-brand-coral uppercase tracking-wider mb-1">Stand</div>
+              <h4 class="text-lg font-bold text-brand-navy">Stand Mic Panjang</h4>
+            </div>
+            <div class="mt-4 flex items-center justify-between border-t pt-3">
+              <span class="font-bold text-brand-navy">300 EGP</span>
+              <a href="#form" onclick="selectItem('Stand Mic Panjang', 300)" class="text-xs bg-brand-navy/10 text-brand-navy px-3 py-1.5 rounded font-semibold hover:bg-brand-navy hover:text-white transition">+ Tambah</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Stand Speaker -->
+        <div class="item-katalog satuan bg-white rounded-xl overflow-hidden border border-brand-navy/10 shadow-sm hover:shadow-md transition flex flex-col group">
+          <!-- Tempat Foto -->
+          <div class="w-full h-40 overflow-hidden bg-gray-100">
+            <img src="images/stand-speaker.jpg" alt="Stand Speaker" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+          </div>
+          <div class="p-5 flex flex-col flex-grow justify-between">
+            <div>
+              <div class="text-xs font-bold text-brand-coral uppercase tracking-wider mb-1">Stand</div>
+              <h4 class="text-lg font-bold text-brand-navy">Stand Speaker</h4>
+            </div>
+            <div class="mt-4 flex items-center justify-between border-t pt-3">
+              <span class="font-bold text-brand-navy">200 EGP</span>
+              <a href="#form" onclick="selectItem('Stand Speaker', 200)" class="text-xs bg-brand-navy/10 text-brand-navy px-3 py-1.5 rounded font-semibold hover:bg-brand-navy hover:text-white transition">+ Tambah</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Stand Mic Kecil -->
+        <div class="item-katalog satuan bg-white rounded-xl overflow-hidden border border-brand-navy/10 shadow-sm hover:shadow-md transition flex flex-col group">
+          <!-- Tempat Foto -->
+          <div class="w-full h-40 overflow-hidden bg-gray-100">
+            <img src="images/stand-mic-kecil.jpg" alt="Stand Mic Kecil" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+          </div>
+          <div class="p-5 flex flex-col flex-grow justify-between">
+            <div>
+              <div class="text-xs font-bold text-brand-coral uppercase tracking-wider mb-1">Stand</div>
+              <h4 class="text-lg font-bold text-brand-navy">Stand Mic Kecil</h4>
+            </div>
+            <div class="mt-4 flex items-center justify-between border-t pt-3">
+              <span class="font-bold text-brand-navy">100 EGP</span>
+              <a href="#form" onclick="selectItem('Stand Mic Kecil', 100)" class="text-xs bg-brand-navy/10 text-brand-navy px-3 py-1.5 rounded font-semibold hover:bg-brand-navy hover:text-white transition">+ Tambah</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Kabel XLR & Jack -->
+        <div class="item-katalog satuan bg-white rounded-xl overflow-hidden border border-brand-navy/10 shadow-sm hover:shadow-md transition flex flex-col group">
+          <!-- Tempat Foto -->
+          <div class="w-full h-40 overflow-hidden bg-gray-100">
+            <img src="images/kabel-xlr.jpg" alt="Kabel XLR & Jack" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+          </div>
+          <div class="p-5 flex flex-col flex-grow justify-between">
+            <div>
+              <div class="text-xs font-bold text-brand-coral uppercase tracking-wider mb-1">Kabel (Satuan)</div>
+              <h4 class="text-lg font-bold text-brand-navy">XLR Cable / Jack 6.5 (Male/Female)</h4>
+            </div>
+            <div class="mt-4 flex items-center justify-between border-t pt-3">
+              <span class="font-bold text-brand-navy">50 EGP / pcs</span>
+              <a href="#form" onclick="selectItem('Kabel Audio XLR / Jack 6.5', 50)" class="text-xs bg-brand-navy/10 text-brand-navy px-3 py-1.5 rounded font-semibold hover:bg-brand-navy hover:text-white transition">+ Tambah</a>
+            </div>
+          </div>
+        </div>
+      </div>
+   </section>
+
+
+
+
+
+  <!-- STANDAR OPERASIONAL PROSEDUR (SOP) -->
+  <section id="sop" class="py-12 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+    <div class="text-center mb-10">
+      <h2 class="text-3xl font-extrabold text-brand-navy uppercase tracking-wide">Standard Operational Procedure</h2>
+      <p class="text-brand-navy/70 text-sm mt-1">SOP Penyewaan BUMI IKPM Darussalam Audio Kairo</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm">
+      
+      <!-- Box 1: Penyewaan -->
+      <div class="bg-white p-6 rounded-xl border border-brand-navy/15 shadow-sm">
+        <h3 class="font-bold text-lg text-brand-navy mb-4 flex items-center">
+          <i class="fa-solid fa-clipboard-list text-brand-coral mr-2"></i> Ketentuan Penyewaan
+        </h3>
+        <ol class="list-decimal list-inside space-y-2.5 text-brand-navy/90">
+          <li>Penyewa wajib mengisi format peminjaman dan membawa cetakan format saat pengambilan barang.</li>
+          <li>Setiap penyewaan disatukan & direkap pada buku khusus.</li>
+          <li>Penyewaan sound harus didampingi <strong>2 orang tim soundsystem</strong>.</li>
+          <li>Wajib membayar <strong>DP sebesar 50%</strong> saat pengambilan barang.</li>
+          <li>Mixer dan Microphone Wireless tidak disewakan terpisah (jika dipaksa, harga disesuaikan Paket 2).</li>
+          <li>Penyewaan wireless wajib dipastikan kesehatan kelengkapannya sebelum & sesudah penyewaan (atau foto kelengkapan jika diwakilkan).</li>
+          <li>Pengajuan sewa maksimal <strong>2x24 jam</strong> sebelum acara.</li>
+          <li>Transportasi dan konsumsi 2 orang tim soundsystem ditanggung penuh oleh penyewa.</li>
+          <li>Menunjuk 1 orang penanggung jawab audio dan menyerahkan kartu identitas (Paspor).</li>
+          <li>Penyewaan dihitung per hari dan per acara. Pembayaran transfer disesuaikan rate hari tersebut.</li>
+        </ol>
+      </div>
+
+      <!-- Box 2: Pemakaian & Operator -->
+      <div class="space-y-6">
+        <div class="bg-white p-6 rounded-xl border border-brand-navy/15 shadow-sm">
+          <h3 class="font-bold text-lg text-brand-navy mb-4 flex items-center">
+            <i class="fa-solid fa-sliders text-brand-coral mr-2"></i> Pemakaian & Operator
+          </h3>
+          <ul class="list-disc list-inside space-y-2 text-brand-navy/90">
+            <li>Pengaturan soundsystem merupakan wewenang operator sepenuhnya.</li>
+            <li>Hanya 1 penanggung jawab acara yang diperbolehkan mendekati wilayah operator.</li>
+            <li>Terminal listrik operator hanya khusus untuk penggunaan soundsystem.</li>
+            <li>Operator wajib siap 1 jam sebelum acara dimulai dan tidak boleh meninggalkan tempat hingga acara usai.</li>
+            <li><strong>Jam Tugas Operator:</strong> Max 5 jam setelah kedatangan. Kelebihan waktu dikenakan charge <strong>30 EGP / jam</strong>.</li>
+            <li>Piket Operator: Paket 2 (1 orang), Paket 3 & 4 (2 orang).</li>
+          </ul>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl border border-brand-navy/15 shadow-sm">
+          <h3 class="font-bold text-lg text-brand-navy mb-4 flex items-center">
+            <i class="fa-solid fa-rotate-left text-brand-coral mr-2"></i> Pengembalian & Denda Kerusakan
+          </h3>
+          <ul class="list-disc list-inside space-y-2 text-brand-navy/90">
+            <li>Penyewa yang namanya tercantum wajib hadir saat pengembalian barang dan berkewajiban mengangkat barang ke sekre BUMI.</li>
+            <li>Uang pelunasan sisa 50% jika ada DP dibayarkan saat pengembalian barang.</li>
+            <li>Keterlambatan pengembalian dikenakan denda <strong>10% dari harga penyewaan</strong>.</li>
+            <li>Segala bentuk kerusakan menjadi tanggung jawab penuh penyewa dan dikenakan denda sesuai jenis kerusakan.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+ </section>
+
+
+  <!-- FORM PENYEWAAN INTERAKTIF -->
+  <section id="form" class="py-12 bg-[#e8decb] border-t border-brand-navy/10 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-4xl mx-auto bg-white p-6 sm:p-10 rounded-2xl shadow-xl border border-brand-navy/10">
+      
+      <div class="border-b border-slate-200 pb-4 mb-6 text-center">
+        <span class="text-xs font-bold text-brand-coral uppercase tracking-widest">Digital Order Form</span>
+        <h2 class="text-2xl sm:text-3xl font-black text-brand-navy">FORMAT PENYEWAAN INVENTARIS</h2>
+        <p class="text-xs sm:text-sm text-slate-500 mt-1">Isi data di bawah ini agar rekap otomatis database kami dan pengiriman via WhatsApp Hotline Kami🙏🏼</p>
+      </div>
+
+      <form id="rentalForm" class="space-y-6">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-xs font-bold text-brand-navy uppercase mb-1">Nama Penyewa *</label>
+            <input type="text" id="namaPenyewa" required class="w-full px-3 py-2 bg-slate-50 border border-slate-300 rounded focus:outline-none focus:border-brand-navy text-sm">
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-brand-navy uppercase mb-1">Lembaga / Instansi *</label>
+            <input type="text" id="lembaga" required class="w-full px-3 py-2 bg-slate-50 border border-slate-300 rounded focus:outline-none focus:border-brand-navy text-sm">
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-brand-navy uppercase mb-1">Nama Kegiatan / Acara *</label>
+            <input type="text" id="namaKegiatan" required class="w-full px-3 py-2 bg-slate-50 border border-slate-300 rounded focus:outline-none focus:border-brand-navy text-sm">
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-brand-navy uppercase mb-1">No. WhatsApp / HP *</label>
+            <input type="tel" id="noHp" required placeholder="+20..." class="w-full px-3 py-2 bg-slate-50 border border-slate-300 rounded focus:outline-none focus:border-brand-navy text-sm">
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-brand-navy uppercase mb-1">Status Pembayaran (sudah/belum) *</label>
+            <input type="text" id="stspembayaran" required class="w-full px-3 py-2 bg-slate-50 border border-slate-300 rounded focus:outline-none focus:border-brand-navy text-sm">
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-brand-navy uppercase mb-1">Tempat Pelaksanaan *</label>
+            <input type="text" id="tempat" required class="w-full px-3 py-2 bg-slate-50 border border-slate-300 rounded focus:outline-none focus:border-brand-navy text-sm">
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-brand-navy uppercase mb-1">Tanggal Mulai Sewa *</label>
+            <input type="date" id="tglMulai" required class="w-full px-3 py-2 bg-slate-50 border border-slate-300 rounded focus:outline-none focus:border-brand-navy text-sm">
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-brand-navy uppercase mb-1">Tanggal Selesai Sewa *</label>
+            <input type="date" id="tglSelesai" required class="w-full px-3 py-2 bg-slate-50 border border-slate-300 rounded focus:outline-none focus:border-brand-navy text-sm">
+          </div>
+        </div>
+
+        <!-- Pilihan Barang Terpilih -->
+        <div class="border-t border-slate-200 pt-4">
+          <label class="block text-xs font-bold text-brand-navy uppercase mb-2">Item Disewa Selected:</label>
+          <div class="bg-slate-50 p-4 rounded-lg border border-slate-200">
+            <div id="selectedItemsList" class="text-sm space-y-1 text-slate-700 italic">Belum ada item dipilih. Klik tombol "+ Tambah" / "Pilih Paket" di katalog di atas.</div>
+            <div class="border-t border-slate-200 mt-3 pt-2 flex justify-between items-center font-bold text-brand-navy">
+              <span>Total Estimasi Sewa:</span>
+              <span id="totalHargaDisplay" class="text-lg text-brand-coral">0 EGP</span>
+            </div>
+            <div class="flex justify-between items-center text-xs text-slate-500 mt-1">
+              <span>Wajib DP (50% saat ambil barang):</span>
+              <span id="dpDisplay" class="font-bold">0 EGP</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Persetujuan Syarat -->
+        <div class="flex items-start space-x-2 text-xs text-brand-navy/80">
+          <input type="checkbox" id="setujuSop" required class="mt-0.5">
+          <label for="setujuSop">Dengan ini pihak penyewa sudah membaca SOP dan siap menaati SOP, siap berkewajiban membawa dan mengembalikan pinjaman, serta siap bertanggung jawab apabila terjadi kerusakan pada barang-barang di atas selama masa penyewaan sebagaimana SOP yang berlaku.</label>
+        </div>
+
+        <button type="button" onclick="kirimFormWA()" class="w-full py-3.5 bg-green-600 text-white font-bold rounded-lg shadow-md hover:bg-green-700 transition flex items-center justify-center space-x-2 text-base">
+          <i class="fa-brands fa-whatsapp text-xl"></i>
+          <span>Kirim Form Pemeliharaan via WhatsApp Hotline (Otomatis Rekap Database) </span>
+        </button>
+      </form>
+
+    </div>
+  </section>
+
+  <!-- KONTAK & FOOTER -->
+  <footer id="kontak" class="bg-brand-navy text-white py-12 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-sm">
+      
+      <!-- Col 1: Identity -->
+      <div>
+        <div class="flex items-center space-x-3 mb-4">
+          <div class="w-10 h-10 bg-white text-brand-navy rounded-full flex items-center justify-center font-bold">
+            <i class="fa-solid fa-headphones text-xl"></i>
+          </div>
+          <span class="font-bold text-lg">DARUSSALAM AUDIO</span>
+        </div>
+        <p class="text-slate-300 leading-relaxed text-xs">
+          Badan Usaha Milik IKPM (BUMI) GONTOR Cabang Kairo - Mesir. Melayani kebutuhan audio dan sound system berkualitas untuk berbagai acara.
+        </p>
+      </div>
+
+      <!-- Col 2: Alamat Sekretariat -->
+      <div>
+        <h4 class="font-bold text-base mb-3 text-brand-gold uppercase tracking-wider">Sekretariat PCI IKPM Kairo</h4>
+        <p class="text-xs text-slate-300 leading-relaxed">
+          <i class="fa-solid fa-location-dot text-brand-coral mr-2"></i>
+          Swessry B, Build 56, Flat 5, Gate A, 10th District, Nasr City, Cairo, Egypt.
+        </p>
+        <p class="text-xs text-slate-300 mt-2">
+          <i class="fa-solid fa-globe mr-2"></i> www.ikpmkairo.org<br>
+          <i class="fa-solid fa-envelope mr-2"></i> ikpmkairo@gontor.ac.id
+        </p>
+      </div>
+
+      <!-- Col 3: Sosmed & Contact -->
+      <div>
+        <h4 class="font-bold text-base mb-3 text-brand-gold uppercase tracking-wider">Contact Person & Medsos</h4>
+        <div class="space-y-2 text-xs">
+          <p class="flex items-center"><i class="fa-brands fa-whatsapp text-green-400 mr-2 text-base"></i> +20 1500488594 (Darussalam Audio)</p>
+          <p class="flex items-center"><i class="fa-solid fa-phone text-slate-300 mr-2"></i> (+20) 1558028354 (IKPM Kairo)</p>
+          <p class="flex items-center"><i class="fa-brands fa-instagram text-pink-400 mr-2 text-base"></i> @darussalam_audio</p>
+          <p class="flex items-center"><i class="fa-brands fa-instagram text-pink-400 mr-2 text-base"></i> @pci_ikpmkairo</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="max-w-7xl mx-auto border-t border-slate-700/60 mt-8 pt-6 text-center text-xs text-slate-400">
+      &copy; 2026 Darussalam Audio - IKPM Gontor Cabang Kairo. All Rights Reserved.
+    </div>
+  </footer>
+
+  <!-- SCRIPT INTERAKTIF (Form & Filter) -->
+  <script>
+    // State Keranjang/Item Terpilih
+    let selectedItems = [];
+
+    function selectItem(nama, harga) {
+      selectedItems.push({ nama, harga });
+      renderSelectedItems();
+    }
+
+    function removeItem(index) {
+      selectedItems.splice(index, 1);
+      renderSelectedItems();
+    }
+
+    function renderSelectedItems() {
+      const container = document.getElementById('selectedItemsList');
+      const totalDisplay = document.getElementById('totalHargaDisplay');
+      const dpDisplay = document.getElementById('dpDisplay');
+
+      if (selectedItems.length === 0) {
+        container.innerHTML = 'Belum ada item dipilih. Klik "+ Tambah" / "Pilih Paket" di katalog di atas.';
+        totalDisplay.innerText = '0 EGP';
+        dpDisplay.innerText = '0 EGP';
+        return;
+      }
+
+      let html = '<ul class="space-y-1">';
+      let total = 0;
+
+      selectedItems.forEach((item, idx) => {
+        total += item.harga;
+        html += `
+          <li class="flex justify-between items-center text-xs bg-white p-2 rounded border border-slate-200">
+            <span><strong>${item.nama}</strong> (${item.harga} EGP)</span>
+            <button type="button" onclick="removeItem(${idx})" class="text-red-500 hover:text-red-700 font-bold ml-2 text-xs">Hapus</button>
+          </li>
+        `;
+      });
+
+      html += '</ul>';
+      container.innerHTML = html;
+      totalDisplay.innerText = total.toLocaleString() + ' EGP';
+      dpDisplay.innerText = (total * 0.5).toLocaleString() + ' EGP';
+    }
+
+    // Filter Katalog
+    function filterKatalog(kategori) {
+      const items = document.querySelectorAll('.item-katalog');
+      const btnAll = document.getElementById('btn-all');
+      const btnPaket = document.getElementById('btn-paket');
+      const btnSatuan = document.getElementById('btn-satuan');
+
+      // Reset style tombol
+      [btnAll, btnPaket, btnSatuan].forEach(btn => {
+        btn.className = "px-4 py-2 rounded-full font-semibold text-sm bg-white text-brand-navy border border-brand-navy/20 hover:bg-brand-navy/10 transition";
+      });
+
+      items.forEach(item => {
+        if (kategori === 'all') {
+          item.style.display = 'flex';
+          btnAll.className = "px-4 py-2 rounded-full font-semibold text-sm bg-brand-navy text-white shadow-sm transition";
+        } else if (item.classList.contains(kategori)) {
+          item.style.display = 'flex';
+          if (kategori === 'paket') btnPaket.className = "px-4 py-2 rounded-full font-semibold text-sm bg-brand-navy text-white shadow-sm transition";
+          if (kategori === 'satuan') btnSatuan.className = "px-4 py-2 rounded-full font-semibold text-sm bg-brand-navy text-white shadow-sm transition";
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    }
+
+
+
+
+
+// Toggle Mobile Menu
+    document.getElementById('mobile-menu-button').addEventListener('click', function() {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+    });
+
+    // Kirim Form Ke WhatsApp Admin & Google Spreadsheet
+    function kirimFormWA() {
+      const nama = document.getElementById('namaPenyewa').value.trim();
+      const lembaga = document.getElementById('lembaga').value.trim();
+      const kegiatan = document.getElementById('namaKegiatan').value.trim();
+      const noHp = document.getElementById('noHp').value.trim();
+      const stspembayaran = document.getElementById('stspembayaran').value.trim();
+      const tempat = document.getElementById('tempat').value.trim();
+      const tglMulai = document.getElementById('tglMulai').value;
+      const tglSelesai = document.getElementById('tglSelesai').value;
+      const setujuSop = document.getElementById('setujuSop').checked;
+
+      // --- VALIDASI SWA ---
+      if (!nama || !lembaga || !kegiatan || !noHp || !stspembayaran || !tempat || !tglMulai || !tglSelesai) {
+        Swal.fire({
+          icon: 'warning',
+          title: 'Formulir Belum Lengkap',
+          text: 'Mohon lengkapi seluruh formulir data penyewaan!',
+          confirmButtonColor: '#1e293b'
+        });
+        return;
+      }
+
+      if (!setujuSop) {
+        Swal.fire({
+          icon: 'warning',
+          title: 'Persetujuan SOP',
+          text: 'Anda wajib menyetujui SOP Penyewaan Darussalam Audio!',
+          confirmButtonColor: '#1e293b'
+        });
+        return;
+      }
+
+      if (typeof selectedItems === 'undefined' || selectedItems.length === 0) {
+        Swal.fire({
+          icon: 'warning',
+          title: 'Katalog Kosong',
+          text: 'Silakan pilih minimal 1 paket/barang dari katalog terlebih dahulu!',
+          confirmButtonColor: '#1e293b'
+        });
+        return;
+      }
+
+      // --- SIAPKAN DATA BARANG ---
+      let listBarangStr = "";   // Untuk format WA
+      let listBarangSheet = ""; // Untuk format Spreadsheet
+      let total = 0;
+      
+      selectedItems.forEach((item, index) => {
+        listBarangStr += `%0A  ${index + 1}. ${item.nama} - ${item.harga} EGP`;
+        listBarangSheet += `${index + 1}. ${item.nama} (${item.harga} EGP)\n`; 
+        total += item.harga;
+      });
+
+      // --- TAMPILKAN POP-UP LOADING ---
+      Swal.fire({
+        title: 'Menyimpan Data...',
+        text: 'Sedang mengirim data pesanan Anda ke database kami.',
+        allowOutsideClick: false,
+        showConfirmButton: false,
+        didOpen: () => {
+          Swal.showLoading();
+        }
+      });
+
+      // --- DATA KONTEN SPREADSHEET ---
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbzezJyJadlNnTlMORALG2F-jr1imCXSy5hf3AULvEXBIOAyMrkVsnnN39Q-4PFPiDC3/exec'; // <-- PASTE URL GOOGLE APPS SCRIPT DI SINI
+      
+      const formData = new FormData();
+      formData.append('nama', nama);
+      formData.append('lembaga', lembaga);
+      formData.append('kegiatan', kegiatan);
+      formData.append('nohp', noHp);
+      formData.append('stspembayaran', stspembayaran);
+      formData.append('tempat', tempat);
+      formData.append('tgl_mulai', tglMulai);
+      formData.append('tgl_selesai', tglSelesai);
+      formData.append('barang', listBarangSheet);
+      formData.append('total', total);
+
+      // --- FORMAT PESAN WHATSAPP ---
+      const message = `*FORMAT PENYEWAAN DARUSSALAM AUDIO*%0A%0A` +
+        `*Nama Penyewa:* ${nama}%0A` +
+        `*Lembaga:* ${lembaga}%0A` +
+        `*Nama Kegiatan:* ${kegiatan}%0A` +
+        `*No. HP:* ${noHp}%0A` +
+        `*Status Pembayaran:* ${stspembayaran}%0A` +
+        `*Tempat:* ${tempat}%0A` +
+        `*Tanggal Pemakaian:* ${tglMulai} s/d ${tglSelesai}%0A%0A` +
+        `*Daftar Barang Disewa:*${listBarangStr}%0A%0A` +
+        `*Total Estimasi:* ${total.toLocaleString()} EGP%0A` +
+        `*DP (50%):* ${(total * 0.5).toLocaleString()} EGP%0A%0A` +
+        `_Saya menyatakan setuju & tunduk pada SOP Penyewaan Darussalam Audio._`;
+
+      const targetWa = "+6282337276795"; // Nomor WA Admin
+
+      // --- PROSES KIRIM DATA DULU SEBELUM KE WA ---
+      fetch(scriptURL, { method: 'POST', body: formData, mode: 'no-cors' })
+        .then(() => {
+          // NOTIFIKASI BERHASIL MASUK DATABASE
+          Swal.fire({
+            icon: 'success',
+            title: 'Transfer Database Berhasil! Terima Kasih',
+            text: 'Data Anda telah aman tersimpan di sistem kami. Lanjut Klik tombol di bawah untuk mengkonfirmasi otomatis format penyewaan anda ke WhatsApp Hotline.',
+            confirmButtonText: '<i class="fa-brands fa-whatsapp"></i> CLICK FOR CONFIRMATION',
+            confirmButtonColor: '#25D366', // Warna Hijau WA
+            allowOutsideClick: false
+          }).then((result) => {
+            // Begitu klik "Lanjut ke WhatsApp", tab WhatsApp baru akan terbuka
+            if (result.isConfirmed) {
+              window.open(`https://wa.me/${targetWa}?text=${message}`, '_blank');
+            }
+          });
+        })
+        .catch(error => {
+          console.error('Gagal mengirim ke Database', error);
+          
+          // NOTIFIKASI KENDALA NETWORK (TETAP BISA KE WA)
+          Swal.fire({
+            icon: 'warning',
+            title: 'Gagal Masuk Database',
+            text: 'Terjadi kendala jaringan saat menyimpan ke database, konfirmasi kendala jaringan anda via WhatsApp hotline kami.',
+            confirmButtonText: 'Lanjut ke WhatsApp hotline',
+            confirmButtonColor: '#25D366'
+          }).then((result) => {
+            if (result.isConfirmed) {
+              window.open(`https://wa.me/${targetWa}?text=${message}`, '_blank');
+            }
+          });
+        });
+    }
+  </script>
+
+
+<!-- Library Notifikasi Pop-up Modern -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+
+</body>
+</html>

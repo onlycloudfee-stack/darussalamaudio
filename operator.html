@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tim Operator - Darussalam Audio</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts & FontAwesome Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              bg: '#f3ece1',
+              card: '#e8decb',
+              navy: '#1d394d',
+              navyDark: '#122533', 
+              coral: '#d9534f',
+              gold: '#c5a059',
+              dark: '#1e293b'
+            }
+          },
+          fontFamily: {
+            sans: ['Poppins', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      background-color: #f3ece1;
+      color: #1d394d;
+      font-family: 'Poppins', sans-serif;
+    }
+  </style>
+</head>
+
+
+<body class="min-h-screen flex flex-col selection:bg-brand-navy selection:text-white">
+
+  <!-- HEADER / NAVBAR SEDERHANA -->
+  <header class="sticky top-0 z-50 bg-[#f3ece1]/90 backdrop-blur-md border-b border-brand-navy/10 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <!-- Logo & Title -->
+        <div class="flex items-center space-x-3">
+          <div class="w-12 h-12 bg-brand-navy rounded-full flex items-center justify-center p-2 shadow-md">
+            <i class="fa-solid fa-headphones text-2xl text-white"></i>
+          </div>
+          <div>
+            <h1 class="text-xl font-extrabold tracking-wider text-brand-navy leading-none">DARUSSALAM AUDIO</h1>
+            <p class="text-xs text-brand-navy/80 font-medium">BUMI Gontor Cabang Kairo</p>
+          </div>
+        </div>
+
+        <!-- Tombol Kembali ke Beranda -->
+        <div>
+          <!-- PENTING: Ganti index.html dengan nama file halaman utama Anda jika namanya berbeda -->
+          <a href="audiofix.html" class="inline-flex items-center px-4 py-2 border-2 border-brand-navy text-sm font-bold rounded-full text-brand-navy hover:bg-brand-navy hover:text-white transition space-x-2">
+            <i class="fa-solid fa-arrow-left"></i>
+            <span class="hidden sm:inline">Kembali ke Beranda</span>
+            <span class="sm:hidden">Kembali</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- KONTEN UTAMA: TIM OPERATOR -->
+  <main class="flex-grow py-12 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-5xl mx-auto">
+      
+      <!-- Judul Laman -->
+      <div class="text-center mb-12">
+        <span class="text-sm font-bold text-brand-coral uppercase tracking-widest bg-white px-4 py-1 rounded-full shadow-sm border border-brand-navy/5">Profil Staf</span>
+        <h2 class="text-4xl sm:text-5xl font-black text-brand-navy uppercase tracking-wide mt-4">Tim Operator</h2>
+        <p class="text-brand-navy/80 mt-3 font-medium text-base sm:text-lg max-w-2xl mx-auto">
+          Tenaga profesional masisir yang siap mengawal kelancaran dan kualitas suara di setiap acara Anda.
+        </p>
+      </div>
+
+      <!-- GRID TIM OPERATOR (2 Kolom di tampilan PC, 1 Kolom di HP) -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+        
+        <!-- Kartu Operator 1 -->
+        <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition duration-300 border border-brand-navy/10 p-6 flex flex-col sm:flex-row items-center sm:items-start space-y-4 sm:space-y-0 sm:space-x-6 text-center sm:text-left">
+          <div class="shrink-0 relative">
+            <div class="w-[150px] h-[150px] rounded-full overflow-hidden border-4 border-[#e8decb] shadow-sm mx-auto sm:mx-0">
+              <img src="src/aufa.jpeg" alt="Foto Operator 1" class="w-full h-full object-cover">
+            </div>
+            <div class="absolute bottom-1 right-1 bg-green-500 text-white p-1.5 rounded-full border-2 border-white text-xs">
+              <i class="fa-solid fa-check"></i>
+            </div>
+          </div>
+          <div class="pt-2">
+            <h3 class="text-2xl font-bold text-brand-navy">Ahmad Aufa Rofiki</h3>
+            <p class="text-sm font-bold text-brand-coral mb-3">Fakultas Syariah Islamiyah</p>
+            <span class="text-xs bg-brand-navy text-white font-semibold px-4 py-1.5 rounded-full inline-block">Kepala Teknisi & Operator</span>
+          </div>
+        </div>
+
+        <!-- Kartu Operator 2 -->
+        <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition duration-300 border border-brand-navy/10 p-6 flex flex-col sm:flex-row items-center sm:items-start space-y-4 sm:space-y-0 sm:space-x-6 text-center sm:text-left">
+          <div class="shrink-0 relative">
+            <div class="w-[150px] h-[150px] rounded-full overflow-hidden border-4 border-[#e8decb] shadow-sm mx-auto sm:mx-0">
+              <img src="images/foto2.jpg" alt="Foto Operator 2" class="w-full h-full object-cover">
+            </div>
+            <div class="absolute bottom-1 right-1 bg-green-500 text-white p-1.5 rounded-full border-2 border-white text-xs">
+              <i class="fa-solid fa-check"></i>
+            </div>
+          </div>
+          <div class="pt-2">
+            <h3 class="text-2xl font-bold text-brand-navy">Muhammad Qeissya</h3>
+            <p class="text-sm font-bold text-brand-coral mb-3">Fakultas Syariah Islamiyah</p>
+            <span class="text-xs bg-brand-navy text-white font-semibold px-4 py-1.5 rounded-full inline-block">Kepala Teknisi & Operator</span>
+          </div>
+        </div>
+
+        <!-- Kartu Operator 3 -->
+        <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition duration-300 border border-brand-navy/10 p-6 flex flex-col sm:flex-row items-center sm:items-start space-y-4 sm:space-y-0 sm:space-x-6 text-center sm:text-left">
+          <div class="shrink-0 relative">
+            <div class="w-[150px] h-[150px] rounded-full overflow-hidden border-4 border-[#e8decb] shadow-sm mx-auto sm:mx-0">
+              <img src="images/foto3.jpg" alt="Foto Operator 3" class="w-full h-full object-cover">
+            </div>
+            <div class="absolute bottom-1 right-1 bg-green-500 text-white p-1.5 rounded-full border-2 border-white text-xs">
+              <i class="fa-solid fa-check"></i>
+            </div>
+          </div>
+          <div class="pt-2">
+            <h3 class="text-2xl font-bold text-brand-navy">Azril Arya</h3>
+            <p class="text-sm font-bold text-brand-coral mb-3">Fakultas Kedokteran</p>
+            <span class="text-xs bg-brand-navy/10 text-brand-navy font-bold px-4 py-1.5 rounded-full inline-block">Operator 01 (Sekretaris) </span>
+          </div>
+        </div>
+
+        <!-- Kartu Operator 4 -->
+        <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition duration-300 border border-brand-navy/10 p-6 flex flex-col sm:flex-row items-center sm:items-start space-y-4 sm:space-y-0 sm:space-x-6 text-center sm:text-left">
+          <div class="shrink-0 relative">
+            <div class="w-[150px] h-[150px] rounded-full overflow-hidden border-4 border-[#e8decb] shadow-sm mx-auto sm:mx-0">
+              <img src="images/foto4.jpg" alt="Foto Operator 4" class="w-full h-full object-cover">
+            </div>
+            <div class="absolute bottom-1 right-1 bg-green-500 text-white p-1.5 rounded-full border-2 border-white text-xs">
+              <i class="fa-solid fa-check"></i>
+            </div>
+          </div>
+          <div class="pt-2">
+            <h3 class="text-2xl font-bold text-brand-navy">Dyah Safirah</h3>
+            <p class="text-sm font-bold text-brand-coral mb-3">Fakultas Syariah Islamiyah</p>
+            <span class="text-xs bg-brand-navy/10 text-brand-navy font-bold px-4 py-1.5 rounded-full inline-block">Operator 02 (Bendahara)  </span>
+          </div>
+        </div>
+
+         <!-- Kartu Operator 3 -->
+        <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition duration-300 border border-brand-navy/10 p-6 flex flex-col sm:flex-row items-center sm:items-start space-y-4 sm:space-y-0 sm:space-x-6 text-center sm:text-left">
+          <div class="shrink-0 relative">
+            <div class="w-[150px] h-[150px] rounded-full overflow-hidden border-4 border-[#e8decb] shadow-sm mx-auto sm:mx-0">
+              <img src="images/foto3.jpg" alt="Foto Operator 3" class="w-full h-full object-cover">
+            </div>
+            <div class="absolute bottom-1 right-1 bg-green-500 text-white p-1.5 rounded-full border-2 border-white text-xs">
+              <i class="fa-solid fa-check"></i>
+            </div>
+          </div>
+          <div class="pt-2">
+            <h3 class="text-2xl font-bold text-brand-navy">Nida Nabilatun</h3>
+            <p class="text-sm font-bold text-brand-coral mb-3">Fakultas Kedokteran</p>
+            <span class="text-xs bg-brand-navy/10 text-brand-navy font-bold px-4 py-1.5 rounded-full inline-block">Operator 03 (Bendahara) </span>
+          </div>
+        </div> 
+
+         <!-- Kartu Operator 3 -->
+        <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition duration-300 border border-brand-navy/10 p-6 flex flex-col sm:flex-row items-center sm:items-start space-y-4 sm:space-y-0 sm:space-x-6 text-center sm:text-left">
+          <div class="shrink-0 relative">
+            <div class="w-[150px] h-[150px] rounded-full overflow-hidden border-4 border-[#e8decb] shadow-sm mx-auto sm:mx-0">
+              <img src="images/foto3.jpg" alt="Foto Operator 3" class="w-full h-full object-cover">
+            </div>
+            <div class="absolute bottom-1 right-1 bg-green-500 text-white p-1.5 rounded-full border-2 border-white text-xs">
+              <i class="fa-solid fa-check"></i>
+            </div>
+          </div>
+          <div class="pt-2">
+            <h3 class="text-2xl font-bold text-brand-navy">Nanriata Shafa</h3>
+            <p class="text-sm font-bold text-brand-coral mb-3">Fakultas Kedokteran</p>
+            <span class="text-xs bg-brand-navy/10 text-brand-navy font-bold px-4 py-1.5 rounded-full inline-block">Operator 04 (Media)  </span>
+          </div>
+        </div>
+
+         <!-- Kartu Operator 3 -->
+        <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition duration-300 border border-brand-navy/10 p-6 flex flex-col sm:flex-row items-center sm:items-start space-y-4 sm:space-y-0 sm:space-x-6 text-center sm:text-left">
+          <div class="shrink-0 relative">
+            <div class="w-[150px] h-[150px] rounded-full overflow-hidden border-4 border-[#e8decb] shadow-sm mx-auto sm:mx-0">
+              <img src="images/foto3.jpg" alt="Foto Operator 3" class="w-full h-full object-cover">
+            </div>
+            <div class="absolute bottom-1 right-1 bg-green-500 text-white p-1.5 rounded-full border-2 border-white text-xs">
+              <i class="fa-solid fa-check"></i>
+            </div>
+          </div>
+          <div class="pt-2">
+            <h3 class="text-2xl font-bold text-brand-navy">Virgi Yasaro</h3>
+            <p class="text-sm font-bold text-brand-coral mb-3">Fakultas Lughoh Arabiyah</p>
+            <span class="text-xs bg-brand-navy/10 text-brand-navy font-bold px-4 py-1.5 rounded-full inline-block">Operator 05</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER SEDERHANA -->
+  <footer class="bg-brand-navy text-white text-center py-6 mt-10">
+    <p class="text-sm text-white/70">© 2024 Darussalam Audio - BUMI IKPM Gontor Cabang Kairo.</p>
+  </footer>
+
+</body>
+</html>
