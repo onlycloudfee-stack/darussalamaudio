@@ -79,15 +79,16 @@
 
 
 
-
-
         <!-- CTA Button -->
-        <div class="hidden md:block">
-          <a href="https://bumicloud.rofikii.sbs/index.php/apps/forms/s/yXxktTy7EBTwKrBNTMFxTfmd" target="_blank" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-full shadow-sm text-white bg-red-600 hover:bg-blue-700 transition space-x-2">
-          <!--  <i class="fa-brands fa-whatsapp text-lg"></i>  -->
-            <span>Kritik & Saran</span>
+           <!-- <div class="hidden md:block">
+              <a href="https://bumicloud.rofikii.sbs/index.php/apps/forms/s/yXxktTy7EBTwKrBNTMFxTfmd" target="_blank" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-full shadow-sm text-white bg-red-600 hover:bg-blue-700 transition space-x-2">
+              <i class="fa-brands fa-whatsapp text-lg"></i>  
+              <span>OUR GALERY</span>
           </a>
-        </div>
+        </div>                -->
+
+
+
 
         <!-- Mobile Menu Toggle -->
         <div class="md:hidden flex items-center">
@@ -141,13 +142,13 @@
       
       <!-- Deskripsi dengan Lis / Outline Putih (Teks ditebalkan sedikit agar lebih jelas) -->
       <p class="text-lg md:text-xl text-brand-navy font-bold max-w-2xl mx-auto mb-8 drop-shadow-md [text-shadow:_-1.5px_-1.5px_0_#fff,_1.5px_-1.5px_0_#fff,_-1.5px_1.5px_0_#fff,_1.5px_1.5px_0_#fff]">
-        Penyediaan perlengkapan sound system berkualitas untuk berbagai kegiatan dan acara masisir. <br> Managed by BUMI.
+        Penyediaan perlengkapan sound system berkualitas untuk berbagai kegiatan dan acara masisir. <br> Managed by Badan Usaha Milik IKPM.
       </p>
       
       <!-- Tombol (Tetap dipertahankan aslinya) -->
       <div class="flex flex-wrap justify-center gap-4">
-        <a href="#katalog" class="px-6 py-3.5 bg-brand-navy text-white font-bold rounded-lg shadow-lg hover:bg-brand-navyDark transition">
-          <i class="fa-solid fa-list-check mr-2"></i>Lihat Katalog
+        <a href="https://bumicloud.rofikii.sbs/index.php/apps/forms/s/yXxktTy7EBTwKrBNTMFxTfmd" class="px-6 py-3.5 bg-brand-navy text-white font-bold rounded-lg shadow-lg hover:bg-brand-navyDark transition">
+          <i class="fa-solid fa-list-check mr-2"></i>Kritik & Saran
         </a>
         <a href="#form" class="px-6 py-3.5 bg-brand-coral text-white font-bold rounded-lg shadow-lg hover:bg-red-700 transition">
           <i class="fa-solid fa-file-pen mr-2"></i>Isi Form Wajib
@@ -586,7 +587,7 @@
         <!-- Kabel Audio -->
         <div class="item-katalog satuan bg-white rounded-xl overflow-hidden border border-brand-navy/10 shadow-sm hover:shadow-md transition flex flex-col group">
           <!-- Tempat Foto -->
-          <div class="w-full h-[300px] overflow-hidden bg-gray-100">
+          <div class="w-full h-[350px] overflow-hidden bg-gray-100">
             <img src="imgkatalog/audiocable.jpg" alt="Aux To Jack" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
           </div>
           <div class="p-5 flex flex-col flex-grow justify-between">
@@ -596,6 +597,31 @@
             </div>
             <div class="mt-4 flex items-center justify-between border-t pt-3">
               <span class="font-bold text-brand-navy">80 EGP / pcs</span>
+              <a href="#form" onclick="selectItem('Kabel Audio XLR / Jack 6.5', 50)" class="text-xs bg-brand-navy/10 text-brand-navy px-3 py-1.5 rounded font-semibold hover:bg-brand-navy hover:text-white transition">+ Tambah</a>
+            </div>
+          </div>
+        </div>
+
+
+
+        <!-- Kabel Audio -->
+        <div class="item-katalog satuan bg-white rounded-xl overflow-hidden border border-brand-navy/10 shadow-sm hover:shadow-md transition flex flex-col group">
+    
+    
+          <!-- Tempat Foto -->
+
+           <div class="w-full h-[350px] overflow-hidden bg-gray-100">
+            <img src="imgkatalog/op.webp" alt="Aux To Jack" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+          </div>   
+          <div class="p-5 flex flex-col flex-grow justify-between">
+            <div> 
+
+
+              <div class="text-xs font-bold text-brand-coral uppercase tracking-wider mb-1">Operator Only</div>
+              <h4 class="text-lg font-bold text-brand-navy"> Operator Akan Di Tentukan Admin</h4>
+            </div>
+            <div class="mt-4 flex items-center justify-between border-t pt-3">
+              <span class="font-bold text-brand-navy">300 EGP / Orang</span>
               <a href="#form" onclick="selectItem('Kabel Audio XLR / Jack 6.5', 50)" class="text-xs bg-brand-navy/10 text-brand-navy px-3 py-1.5 rounded font-semibold hover:bg-brand-navy hover:text-white transition">+ Tambah</a>
             </div>
           </div>
@@ -611,7 +637,7 @@
   <section id="sop" class="py-12 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
     <div class="text-center mb-10">
       <h2 class="text-3xl font-extrabold text-brand-navy uppercase tracking-wide">Standard Operational Procedure</h2>
-      <p class="text-brand-navy/70 text-sm mt-1">SOP Penyewaan BUMI IKPM Darussalam Audio Kairo</p>
+      <p class="text-brand-navy/70 text-sm mt-1">SOP Penyewaan BUMI Darussalam Audio Kairo</p>
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm">
@@ -901,7 +927,7 @@
         Swal.fire({
           icon: 'warning',
           title: 'Persetujuan SOP',
-          text: 'Anda wajib menyetujui SOP Penyewaan Darussalam Audio!',
+          text: 'Antum wajib menyetujui SOP Penyewaan Darussalam Audio!',
           confirmButtonColor: '#1e293b'
         });
         return;
@@ -976,7 +1002,7 @@
           // NOTIFIKASI BERHASIL MASUK DATABASE
           Swal.fire({
             icon: 'success',
-            title: 'Transfer Database Berhasil! Syukron Ustadzi',
+            title: 'Transfer Database Berhasil! Syukron',
             text: 'Data Anda telah aman tersimpan di sistem kami. Lanjut Klik tombol di bawah untuk mengkonfirmasi format penyewaan anda ke WhatsApp Hotline.',
             confirmButtonText: '<i class="fa-brands fa-whatsapp"></i> Click To Confirm',
             confirmButtonColor: '#25D366', // Warna Hijau WA
@@ -995,7 +1021,7 @@
           Swal.fire({
             icon: 'warning',
             title: 'Gagal Masuk Database',
-            text: 'Terjadi kendala jaringan saat menyimpan ke database, konfirmasi kendala jaringan anda via WhatsApp hotline kami.',
+            text: 'Terjadi kendala jaringan saat menyimpan ke database, konfirmasi kendala jaringan anda ke WhatsApp hotline kami.',
             confirmButtonText: 'Lanjut ke WhatsApp hotline',
             confirmButtonColor: '#25D366'
           }).then((result) => {
