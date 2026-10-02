@@ -43,25 +43,30 @@
       clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
     }
   </style>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
 </head>
+
+
 <body class="min-h-screen flex flex-col justify-between selection:bg-brand-navy selection:text-white">
 
   <!-- HEADER / NAVBAR -->
   <header class="sticky top-0 z-50 bg-[#f3ece1]/90 backdrop-blur-md border-b border-brand-navy/10 shadow-sm">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-20">
-        <!-- Logo & Title -->
-        <div class="flex items-center space-x-3">
-          <div class="w-12 h-12 bg-brand-navy rounded-full flex items-center justify-center p-2 shadow-md">
-            <!-- Icon Logo Headphone Audio -->
-            <i class="fa-solid fa-headphones text-2xl text-white"></i>
-          </div>
-          <div>
-            <h1 class="text-xl font-extrabold tracking-wider text-brand-navy leading-none">DARUSSALAM AUDIO</h1>
-            <p class="text-xs text-brand-navy/80 font-medium">BUMI Gontor Cabang Kairo</p>
-          </div>
-        </div>
+      <div class="flex items-center space-x-3">
+  <!-- Logo Bulat -->
+  <div class="w-11 h-12 flex-shrink-0 bg-brand-navy rounded-full flex items-center justify-center shadow-md overflow-hidden">
+    <img src="src/logoaudio.jpeg" alt="Logo" class="w-full h-full object-cover">
+  </div>
 
+  <!-- Title & Subtitle -->
+  <div>
+    <h1 class="text-xl font-extrabold tracking-wider text-brand-navy leading-none">DARUSSALAM AUDIO</h1>
+    <p class="text-xs text-brand-navy/80 font-medium mt-1">BUMI Gontor Cabang Kairo</p>
+  </div>
+</div>
 
 
 
@@ -225,7 +230,7 @@
               <li class="flex items-center"><i class="fa-solid fa-check text-green-600 mr-2"></i> 1 Mixer Audio</li>
               <li class="flex items-center"><i class="fa-solid fa-check text-green-600 mr-2"></i> 1 Mic Kabel</li>
               <li class="flex items-center"><i class="fa-solid fa-check text-green-600 mr-2"></i> 1 Kabel</li>
-              <li cla="flexss items-center"><i class="fa-solid fa-check text-green-600 mr-2"></i> Include 2 Audio Crew </li>
+              <li class="flex items-center"><i class="fa-solid fa-check text-green-600 mr-2"></i> Include 2 Audio Crew </li>
             </ul>
             <div class="flex items-center justify-between border-t border-slate-100 pt-4">
               <div>
@@ -254,7 +259,7 @@
               <li class="flex items-center"><i class="fa-solid fa-check text-green-600 mr-2"></i> 1 Mixer Audio</li>
               <li class="flex items-center"><i class="fa-solid fa-check text-green-600 mr-2"></i> Mic Wireless</li>
               <li class="flex items-center"><i class="fa-solid fa-check text-green-600 mr-2"></i> 1 Kabel</li>
-              <li cla="flexss items-center"><i class="fa-solid fa-check text-green-600 mr-2"></i> Include 2 Audio Crew </li>
+              <li class="flex items-center"><i class="fa-solid fa-check text-green-600 mr-2"></i> Include 2 Audio Crew </li>
             </ul>
             <div class="flex items-center justify-between border-t border-slate-100 pt-4">
               <div>
@@ -284,7 +289,7 @@
               <li class="flex items-center"><i class="fa-solid fa-check text-green-600 mr-2"></i> 1 Mic Dynamic</li>
               <li class="flex items-center"><i class="fa-solid fa-check text-green-600 mr-2"></i> 1 Kabel</li>
               <li class="flex items-center"><i class="fa-solid fa-check text-green-600 mr-2"></i> 1 Stand Mic</li>
-              <li cla="flexss items-center"><i class="fa-solid fa-check text-green-600 mr-2"></i> Include 2 Audio Crew </li>
+              <li class="flex items-center"><i class="fa-solid fa-check text-green-600 mr-2"></i> Include 2 Audio Crew </li>
             </ul>
             <div class="flex items-center justify-between border-t border-slate-100 pt-4">
               <div>
@@ -314,7 +319,7 @@
               <li class="flex items-center"><i class="fa-solid fa-check text-green-600 mr-2"></i> Mic Wireless</li>
               <li class="flex items-center"><i class="fa-solid fa-check text-green-600 mr-2"></i> 1 Kabel</li>
               <li class="flex items-center"><i class="fa-solid fa-check text-green-600 mr-2"></i> 1 Stand Mic</li>
-              <li cla="flexss items-center"><i class="fa-solid fa-check text-green-600 mr-2"></i> Include 2 Audio Crew </li>
+              <li class="flex items-center"><i class="fa-solid fa-check text-green-600 mr-2"></i> Include 2 Audio Crew </li>
             </ul>
             <div class="flex items-center justify-between border-t border-slate-100 pt-4">
               <div>
@@ -346,7 +351,7 @@
               <li class="flex items-center"><i class="fa-solid fa-check text-green-600 mr-2"></i> Mic Wireless</li>
               <li class="flex items-center"><i class="fa-solid fa-check text-green-600 mr-2"></i> 1 Cable</li>
               <li class="flex items-center"><i class="fa-solid fa-check text-green-600 mr-2"></i> 1 Stand Mic</li>
-              <li cla="flexss items-center"><i class="fa-solid fa-check text-green-600 mr-2"></i> Include 2 Audio Crew </li>
+              <li class="flex items-center"><i class="fa-solid fa-check text-green-600 mr-2"></i> Include 2 Audio Crew </li>
             </ul>
             <div class="flex items-center justify-between border-t border-slate-100 pt-4">
               <div>
@@ -958,84 +963,190 @@
         total += item.harga;
       });
 
-      // --- TAMPILKAN POP-UP LOADING ---
-      Swal.fire({
-        title: 'Menyimpan Data...',
-        text: 'Sedang mengirim data pesanan Anda ke sistem kami.',
-        allowOutsideClick: false,
-        showConfirmButton: false,
-        didOpen: () => {
-          Swal.showLoading();
-        }
-      });
 
-      // --- DATA KONTEN SPREADSHEET ---
-      const scriptURL = 'https://script.google.com/macros/s/AKfycbzezJyJadlNnTlMORALG2F-jr1imCXSy5hf3AULvEXBIOAyMrkVsnnN39Q-4PFPiDC3/exec'; // <-- PASTE URL GOOGLE APPS SCRIPT DI SINI
-      
-      const formData = new FormData();
-      formData.append('nama', nama);
-      formData.append('lembaga', lembaga);
-      formData.append('kegiatan', kegiatan);
-      formData.append('nohp', noHp);
-      formData.append('stspembayaran', stspembayaran);
-      formData.append('tempat', tempat);
-      formData.append('tgl_mulai', tglMulai);
-      formData.append('tgl_selesai', tglSelesai);
-      formData.append('barang', listBarangSheet);
-      formData.append('total', total);
+// --- TAMPILKAN POP-UP LOADING ---
+    Swal.fire({
+      title: 'Menyimpan Data...',
+      text: 'Sedang mengirim data pesanan Anda ke sistem kami.',
+      allowOutsideClick: false,
+      showConfirmButton: false,
+      didOpen: () => {
+        Swal.showLoading();
+      }
+    });
 
-      // --- FORMAT PESAN WHATSAPP ---
-      const message = `*FORMAT PENYEWAAN DARUSSALAM AUDIO*%0A%0A` +
-        `*Nama Penyewa:* ${nama}%0A` +
-        `*Lembaga:* ${lembaga}%0A` +
-        `*Nama Kegiatan:* ${kegiatan}%0A` +
-        `*No. HP:* ${noHp}%0A` +
-        `*Status Pembayaran:* ${stspembayaran}%0A` +
-        `*Tempat:* ${tempat}%0A` +
-        `*Tanggal Pemakaian:* ${tglMulai} s/d ${tglSelesai}%0A%0A` +
-        `*Daftar Barang Disewa:*${listBarangStr}%0A%0A` +
-        `*Total Estimasi:* ${total.toLocaleString()} EGP%0A` +
-        `*DP (50%):* ${(total * 0.5).toLocaleString()} EGP%0A%0A` +
-        `_Saya menyatakan setuju & tunduk pada SOP Penyewaan Darussalam Audio._`;
+    // --- DATA KONTEN SPREADSHEET ---
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzezJyJadlNnTlMORALG2F-jr1imCXSy5hf3AULvEXBIOAyMrkVsnnN39Q-4PFPiDC3/exec';
+    
+    const formData = new FormData();
+    formData.append('nama', nama);
+    formData.append('lembaga', lembaga);
+    formData.append('kegiatan', kegiatan);
+    formData.append('nohp', noHp);
+    formData.append('stspembayaran', stspembayaran);
+    formData.append('tempat', tempat);
+    formData.append('tgl_mulai', tglMulai);
+    formData.append('tgl_selesai', tglSelesai);
+    formData.append('barang', listBarangSheet);
+    formData.append('total', total);
 
-      const targetWa = "+201106688560"; // Nomor WA Admin
+    // --- FORMAT PESAN WHATSAPP ---
+    const message = `*FORMAT PENYEWAAN DARUSSALAM AUDIO*%0A%0A` +
+      `*Nama Penyewa:* ${nama}%0A` +
+      `*Lembaga:* ${lembaga}%0A` +
+      `*Nama Kegiatan:* ${kegiatan}%0A` +
+      `*No. HP:* ${noHp}%0A` +
+      `*Status Pembayaran:* ${stspembayaran}%0A` +
+      `*Tempat:* ${tempat}%0A` +
+      `*Tanggal Pemakaian:* ${tglMulai} s/d ${tglSelesai}%0A%0A` +
+      `*Daftar Barang Disewa:*${listBarangStr}%0A%0A` +
+      `*Total Estimasi:* ${total.toLocaleString()} EGP%0A` +
+      `*DP (50%):* ${(total * 0.5).toLocaleString()} EGP%0A%0A` +
+      `_Saya menyatakan setuju & tunduk pada SOP Penyewaan Darussalam Audio._`;
 
-      // --- PROSES KIRIM DATA DULU SEBELUM KE WA ---
-      fetch(scriptURL, { method: 'POST', body: formData, mode: 'no-cors' })
-        .then(() => {
-          // NOTIFIKASI BERHASIL MASUK DATABASE
-          Swal.fire({
-            icon: 'success',
-            title: 'Transfer Database Berhasil! Syukron',
-            text: 'Data Anda telah aman tersimpan di sistem kami. Lanjut Klik tombol di bawah untuk mengkonfirmasi format penyewaan anda ke WhatsApp Hotline.',
-            confirmButtonText: '<i class="fa-brands fa-whatsapp"></i> Click To Confirm',
-            confirmButtonColor: '#25D366', // Warna Hijau WA
-            allowOutsideClick: false
-          }).then((result) => {
-            // Begitu klik "Lanjut ke WhatsApp", tab WhatsApp baru akan terbuka
-            if (result.isConfirmed) {
-              window.open(`https://wa.me/${targetWa}?text=${message}`, '_blank');
-            }
-          });
-        })
-        .catch(error => {
-          console.error('Gagal mengirim ke Database', error);
+    const targetWa = "+201106688560"; // Nomor WA Admin
+
+    // --- PROSES KIRIM DATA DULU SEBELUM KE WA ---
+    fetch(scriptURL, { method: 'POST', body: formData, mode: 'no-cors' })
+      .then(() => {
+        // GENERATE KODE TRANSAKSI UNIK & WAKTU SEKARANG
+        const kodeTransaksi = 'DA-' + Math.floor(100000 + Math.random() * 900000);
+        const tglSekarang = new Date().toLocaleString('id-ID', { dateStyle: 'medium', timeStyle: 'short' });
+
+        // Merapikan format daftar barang untuk HTML (Ubah %0A/enter WA menjadi <br> dan hapus tanda bintang)
+        let htmlDaftarBarang = listBarangStr.replace(/%0A/g, '<br>').replace(/\n/g, '<br>');
+        htmlDaftarBarang = htmlDaftarBarang.replace(/\*/g, ''); // Menghilangkan asterisk (*) jika ada
+
+        // 1. TAHAP PERTAMA: Notifikasi Sukses Lama
+        Swal.fire({
+          icon: 'success',
+          title: 'Transfer Database Berhasil! Syukron',
+          text: 'Data Anda telah aman tersimpan di sistem kami. Klik tombol di bawah. save rental card (syarat pengambilan dan pengembalian barang sewa) lalu konfirmasi ke Whatapp Hotline.',
+          confirmButtonText: '<i class="fa-solid fa-receipt"></i> audio rental card',
+          confirmButtonColor: '#3b82f6', 
+          allowOutsideClick: false
+        }).then((firstResult) => {
           
-          // NOTIFIKASI KENDALA NETWORK (TETAP BISA KE WA)
-          Swal.fire({
-            icon: 'warning',
-            title: 'Gagal Masuk Database',
-            text: 'Terjadi kendala jaringan saat menyimpan ke database, konfirmasi kendala jaringan anda ke WhatsApp hotline kami.',
-            confirmButtonText: 'Lanjut ke WhatsApp hotline',
-            confirmButtonColor: '#25D366'
-          }).then((result) => {
-            if (result.isConfirmed) {
-              window.open(`https://wa.me/${targetWa}?text=${message}`, '_blank');
-            }
-          });
+          // 2. TAHAP KEDUA: Munculkan KARTU BUKTI SEWA LENGKAP
+          if (firstResult.isConfirmed) {
+            Swal.fire({
+              title: '',
+              width: '700px', // Diperlebar sedikit agar data muat rapi
+              html: `
+           <!-- BUNGKUS UTAMA DENGAN ID receipt-card -->
+  <div id="receipt-card" style="background: #ffffff; padding: 24px; border-radius: 16px; text-align: left; box-shadow: 0 4px 20px rgba(0,0,0,0.05);">
+    
+    <!-- HEADER BUKTI -->
+    <div style="display: flex; flex-direction: column; align-items: center; text-align: center; border-bottom: 2px dashed #cbd5e1; padding-bottom: 18px; margin-bottom: 18px;">
+      
+      <!-- LOGO HEADPHONE BULAT -->
+      <div style="width: 48px; height: 48px; background: #0f172a; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 12px auto;">
+        <i class="fa-solid fa-headphones" style="font-size: 20px; color: #ffffff;"></i>
+      </div>
+      
+      <h3 style="margin: 0; font-size: 18px; font-family: 'Poppins', 'Inter', sans-serif; font-weight: 700; color: #0f172a; letter-spacing: 0.5px;">AUDIO RENTAL CARD</h3>
+      <p style="margin: 4px 0 0 0; font-size: 13px; font-family: 'Poppins', 'Inter', sans-serif; color: #64748b;">Darussalam Audio 2026/2027</p>
+    </div>
+
+    <!-- RINCIAN DATA PENYEWA & ACARA -->
+    <div style="font-size: 13px; display: flex; flex-direction: column; gap: 10px;">
+      <div style="display: flex; justify-content: space-between; text-align: left;"><span style="color: #64748b; width: 40%;">No. Referensi:</span><span style="font-weight: 700; color: #3b82f6; width: 60%; text-align: right;">${kodeTransaksi}</span></div>
+      <div style="display: flex; justify-content: space-between; text-align: left;"><span style="color: #64748b; width: 40%;">Waktu Booking:</span><span style="font-weight: 600; color: #334155; width: 60%; text-align: right;">${tglSekarang}</span></div>
+      <div style="display: flex; justify-content: space-between; align-items: center; text-align: left;"><span style="color: #64748b; width: 40%;">Status Data:</span><span style="background: #dcfce7; color: #15803d; padding: 4px 10px; border-radius: 6px; font-size: 11px; font-weight: 700; text-align: right;">DATABASE SAVED</span></div>
+      <div style="height: 1px; background: #e2e8f0; margin: 4px 0;"></div>
+      <div style="display: flex; justify-content: space-between; text-align: left;"><span style="color: #64748b; width: 40%;">Nama Penyewa:</span><span style="font-weight: 600; color: #334155; width: 60%; text-align: right;">${nama}</span></div>
+      <div style="display: flex; justify-content: space-between; text-align: left;"><span style="color: #64748b; width: 40%;">No. WhatsApp:</span><span style="font-weight: 600; color: #334155; width: 60%; text-align: right;">${noHp}</span></div>
+      <div style="display: flex; justify-content: space-between; text-align: left;"><span style="color: #64748b; width: 40%;">Lembaga:</span><span style="font-weight: 600; color: #334155; width: 60%; text-align: right;">${lembaga}</span></div>
+      <div style="display: flex; justify-content: space-between; text-align: left;"><span style="color: #64748b; width: 40%;">Nama Kegiatan:</span><span style="font-weight: 600; color: #334155; width: 60%; text-align: right;">${kegiatan}</span></div>
+      <div style="display: flex; justify-content: space-between; text-align: left;"><span style="color: #64748b; width: 40%;">Tempat Acara:</span><span style="font-weight: 600; color: #334155; width: 60%; text-align: right;">${tempat}</span></div>
+      <div style="display: flex; justify-content: space-between; text-align: left;"><span style="color: #64748b; width: 40%;">Tgl Pemakaian:</span><span style="font-weight: 600; color: #334155; width: 60%; text-align: right;">${tglMulai} s/d ${tglSelesai}</span></div>
+      <div style="display: flex; justify-content: space-between; text-align: left;"><span style="color: #64748b; width: 40%;">Status Pembayaran:</span><span style="font-weight: 600; color: #334155; width: 60%; text-align: right;">${stspembayaran}</span></div>
+      <div style="display: flex; justify-content: space-between; text-align: left;"><span style="color: #64748b; width: 40%;">Persetujuan SOP: </span><span style="font-weight: 600; color: #334155; width: 60%; text-align: right;">Menyatakan Setuju</span></div>
+    </div>
+
+    <!-- KOTAK RINCIAN BARANG -->
+    <div style="margin-top: 16px; padding: 12px; background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 8px; font-size: 13px; color: #475569;">
+      <div style="font-weight: 700; color: #0f172a; margin-bottom: 8px; border-bottom: 1px solid #cbd5e1; padding-bottom: 6px; text-align: left;">Daftar Barang Disewa:</div>
+      <div style="line-height: 1.6; font-family: monospace; font-size: 12px; text-align: left;">${htmlDaftarBarang}</div>
+    </div>
+
+    <!-- TOTAL BIAYA -->
+    <div style="border-top: 2px dashed #cbd5e1; margin-top: 16px; padding-top: 16px; font-size: 14px;">
+      <div style="display: flex; justify-content: space-between; margin-bottom: 8px;"><span style="color: #64748b;">Total:</span><span style="font-weight: 800; color: #0f172a;">${total.toLocaleString()} EGP</span></div>
+      <div style="display: flex; justify-content: space-between; text-align: left;"><span style="color: #64748b;">Minimal DP (50%):</span><span style="font-weight: 800; color: #e11d48;">${(total * 0.5).toLocaleString()} EGP</span></div>
+    </div>
+
+  </div> <!-- Penutup #receipt-card -->
+
+  <div style="margin-top: 20px; display: flex; flex-direction: column; gap: 10px; align-items: center;">
+    <button id="btn-save-receipt" type="button" style="background: #3b82f6; color: white; border: none; padding: 12px 20px; border-radius: 8px; font-size: 14px; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; transition: 0.3s; width: 100%; justify-content: center;">
+      <i class="fa-solid fa-download"></i> Simpan Rental Card (gambar)
+    </button>
+  </div>
+`,
+              showConfirmButton: true,
+              confirmButtonText: '<i class="fa-brands fa-whatsapp"></i> Lanjut Konfirmasi ke Hotline Kami!',
+              confirmButtonColor: '#25D366',
+              allowOutsideClick: false,
+              didRender: () => {
+                // Action Tombol Simpan Bukti
+                document.getElementById('btn-save-receipt').addEventListener('click', () => {
+                  const receiptElement = document.getElementById('receipt-card');
+                  
+                  // Mengubah style tombol saat loading download
+                  const btnSave = document.getElementById('btn-save-receipt');
+                  const originalText = btnSave.innerHTML;
+                  btnSave.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Menyimpan...';
+                  btnSave.disabled = true;
+                  btnSave.style.opacity = '0.7';
+
+                  html2canvas(receiptElement, { scale: 1 }).then(canvas => {
+                    const link = document.createElement('a');
+                    link.download = `Bukti-Sewa-${kodeTransaksi}.png`;
+                    link.href = canvas.toDataURL('image/png');
+                    link.click();
+
+                    // Mengembalikan tombol ke keadaan semula
+                    btnSave.innerHTML = '<i class="fa-solid fa-check"></i> Berhasil Disimpan!';
+                    btnSave.style.background = '#10b981'; // Ubah warna jadi hijau sebagai tanda sukses
+                    setTimeout(() => {
+                      btnSave.innerHTML = originalText;
+                      btnSave.style.background = '#3b82f6';
+                      btnSave.disabled = false;
+                      btnSave.style.opacity = '1';
+                    }, 3000);
+                  });
+                });
+              }
+            }).then((secondResult) => {
+              // 3. TAHAP KETIGA: Jika klik Konfirmasi WA Admin
+              if (secondResult.isConfirmed) {
+                window.open(`https://wa.me/${targetWa}?text=${message}`, '_blank');
+              }
+            });
+
+          }
         });
-    }
-  </script>
+
+      })
+      .catch(error => {
+        console.error('Gagal mengirim ke Database', error);
+        
+        // NOTIFIKASI KENDALA NETWORK (Lanjut ke WA)
+        Swal.fire({
+          icon: 'warning',
+          title: 'Gagal Masuk Database',
+          text: 'Terjadi kendala jaringan saat menyimpan ke database. Konfirmasi kendala jaringan antum ke Whatapp Hotline kami.',
+          confirmButtonText: 'Konfirm ke WhatsApp Hotline',
+          confirmButtonColor: '#25D366'
+        }).then((result) => {
+          if (result.isConfirmed) {
+            window.open(`https://wa.me/${targetWa}?text=${message}`, '_blank');
+          }
+        });
+      });
+  }
+</script>
 
 
 <!-- Library Notifikasi Pop-up Modern -->
