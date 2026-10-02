@@ -1100,11 +1100,19 @@
                   btnSave.disabled = true;
                   btnSave.style.opacity = '0.7';
 
-                  html2canvas(receiptElement, { scale: 1 }).then(canvas => {
+
+
+
+                  html2canvas(receiptElement, { scale: 3 })
+                  
+                  .then(canvas => {
                     const link = document.createElement('a');
                     link.download = `Bukti-Sewa-${kodeTransaksi}.png`;
                     link.href = canvas.toDataURL('image/png');
                     link.click();
+
+
+
 
                     // Mengembalikan tombol ke keadaan semula
                     btnSave.innerHTML = '<i class="fa-solid fa-check"></i> Berhasil Disimpan!';
